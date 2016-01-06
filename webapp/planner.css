@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+/* reset */
+*				{ margin:0; padding:0 }
+body			{ font:0.75em "맑은 고딕", 돋움, 굴림; text-align:center }
+ul, ol			{ list-style-type: none }
+
+/* layout */
+div#container	{ text-align:left; width:1920px; margin:0 auto; border: 1px solid black;}
+div#section		{margin:10px 10px;}
+div#header		{border: 1px solid black;}
+div#footer		{ clear:both; width:100%;border: 1px solid black;}
+
+/* header */
+div#header	h1				{ height:70px; line-height:70px; margin:0; padding-left:10px; color:#79B30B }
+div#header	ul				{ height:20px; margin:0 20px 10px 0 } 
+div#header	li				{ float:right }
+div#header	li a 			{ color:#4F4F4F; font-weight:bold; margin-left:10px; text-decoration:none; }
+
+.koreaMap{
+	height:70%;
+	width: 30%;
+	border: 1px solid black;
+	text-align:center;
+}
+
+.plantable{
+	float: left;
+	height:100%;
+	width: 50%;
+	border: 1px solid black;
+	text-align:center;
+}
+
+.timetable {
+	overflow: hidden;
+	float: left;
+	width: 432px;
+	height: 221px;
+	padding: 17px 20px 17px;
+	border: 4px solid #0095cd;
+	background: #ecf1f4
+}
+
+.tra_box{overflow:hidden;padding:8px 0 0 28px;border:1px solid #dadada;background:#fff}
+.tra_box ul{overflow:hidden;}
+.tra_box li{float:left;width:24.8%;margin-bottom:5px}
