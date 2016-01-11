@@ -66,7 +66,7 @@
 	
 	function isValidDateSetting(year,month,date, hour){
 	
-		var current, year, month, day, days, i, j; 
+		var current, year, month, day, i, j; 
 		
 		current = new Date(); 
 		year = (year) ? year : current.getFullYear(); 
@@ -82,11 +82,12 @@
 
 		day = (day) ? day : current.getDate(); 
 		
-		days = new Date(new Date(year, month, 1)-86400000).getDate(); 
-		FORM.day.length = 0; 
-		for (i=0, j; i < days; i++) { 
+		lastDay = new Date(new Date(year, month, 1)).getDate(); 
+		
+		day.length = 0; 
+		for (i=0, j; i < lastDay; i++) { 
 		j = (i < 9) ? '0'+(i+1) : i+1; 
-		FORM.day.options[i] = new Option(j, j); 
+		day.options[i] = new Option(j, j); 
 
 		} 
 
